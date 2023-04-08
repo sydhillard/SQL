@@ -1,0 +1,15 @@
+CREATE TABLE workout_clothes (id INTEGER PRIMARY KEY, item TEXT, color TEXT, quantity INTEGER, price INTEGER);
+
+INSERT INTO workout_clothes VALUES (1, "Joggers", "Gray", 8, 50);
+INSERT INTO workout_clothes VALUES (2, "Joggers", "Black", 12, 50);
+INSERT INTO workout_clothes VALUES (3, "Leggings", "Pink", 10, 40);
+INSERT INTO workout_clothes VALUES (4, "Leggings", "Teal", 10, 40);
+INSERT INTO workout_clothes VALUES (5, "Sports Bra", "Pink", 5, 15);
+INSERT INTO workout_clothes VALUES (6, "Sporta Bra", "Black", 10, 15);
+INSERT INTO workout_clothes VALUES (7, "Biker Shorts", 12, 30);
+
+SELECT * FROM workout_clothes ORDER BY price;
+SELECT * FROM workout_clothes ORDER BY quantity;
+SELECT * FROM workout_clothes ORDER BY color;
+SELECT SUM(price) FROM workout_clothes;
+SLECT SUM(quantity) FROM workout_clothes;
